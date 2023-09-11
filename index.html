@@ -1,0 +1,86 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" href="http://cache2net3.com/Repositorio/9024/Logo/NECTARrr%20.webp">
+  <title>Pesquisa de satisfação</title>
+
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+<!-- Inclua outras bibliotecas do Firebase que você precisa usar -->
+
+
+</head>
+
+<body class="main loggedIn lang-pt pt-BR gdGrid _initOk" marginwidth="0" marginwidth="0" data-locale="pt-BR">
+
+  <header id="SiteNav">
+    <nav data-test="background-header-nav" class="d-flex align-items-center css-jfggi0 emsrjxb0" flex></nav>
+  </header>
+  <nav class="header-base container-fluid">
+    <div class="header-desktop row">
+      <div class="header-desktop-logo col-md-3" flex>
+        <a href="/index.html" style="height: 100%; margin: 0 auto;" aria-label="Logo">
+          <img alt="LogoMarca" loading="lazy" src="//cache2net3.com/Repositorio/9024/Logo/NECTARrr%20.webp">
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <h1>Avalie Nosso Restaurante</h1>
+
+  <form id="formulario">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea>
+
+    <input type="submit" value="Enviar Mensagem">
+  </form>
+
+  <div class="rating">
+    <input type="radio" id="star5" name="rate" value="5">
+    <label for="star5" title="text"></label>
+    <input type="radio" id="star4" name="rate" value="4">
+    <label for="star4" title="text"></label>
+    <input checked="" type="radio" id="star3" name="rate" value="3">
+    <label for="star3" title="text"></label>
+    <input type="radio" id="star2" name="rate" value="2">
+    <label for="star2" title="text"></label>
+    <input type="radio" id="star1" name="rate" value="1">
+    <label for="star1" title="text"></label>
+  </div>
+
+  <!-- Add your Firebase script snippet here -->
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+  <!-- You can also add other Firebase modules you want to use, like Firebase Storage, Firebase Realtime Database, etc. -->
+
+  <script>
+    // Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyChV2t45AXLB2vr27W-cYu7GAI1c2R4N0A",
+      authDomain: "satisfaction-survey-49beb.firebaseapp.com",
+      projectId: "satisfaction-survey-49beb",
+      storageBucket: "satisfaction-survey-49beb.appspot.com" ,
+      messagingSenderId: "693766354995",
+      appId: "693766354995"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  
+
+  <!-- Add your other JavaScript code here -->
+  <script src="./Script.js"></script>
+</body>
+
+</html>

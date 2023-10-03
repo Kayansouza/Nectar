@@ -40,4 +40,14 @@ window.addEventListener("DOMContentLoaded", function () {
       console.error("Erro ao enviar mensagem: ", error);
     }
   }
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyChV2t45AXLB2vr27W-cYu7GAI1c2R4N0A",
+    authDomain: "satisfaction-survey-49beb.firebaseapp.com",
+    projectId: "satisfaction-survey-49beb",
+    storageBucket: "satisfaction-survey-49beb.appspot.com" ,
+    messagingSenderId: "693766354995",
+    appId: "693766354995"
+  };
+  firebase.initializeApp(firebaseConfig);
 });
